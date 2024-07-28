@@ -1,4 +1,4 @@
-#  Object-Oriented Application Development
+#  Object-Oriented Inventory Management Application 
  C482 - Software 1 Project
  
 Competencies
