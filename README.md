@@ -1,55 +1,57 @@
-#  Object-Oriented Inventory Management Application 
-Inventory Management System
+#  Inventory Management Application 
 
-This project is an Inventory Management System developed using Java and JavaFX. It allows users to manage parts and products, including adding, modifying, deleting, and searching for parts and products.
+Overview 
+
+This project is an Inventory Management System that provides a user-friendly interface to manage parts and products. The system allows users to add, modify, search, and delete parts and products within an inventory. The application is developed using Java and JavaFX for the front-end interface.
 
 Features
 
-Add, modify, and delete parts and products
-Search functionality for parts and products
-Confirmation dialogs for delete and exit actions
-Error handling for invalid actions
+Add Part/Product: Allows the user to add new parts and products to the inventory.
+Modify Part/Product: Enables the user to modify existing parts and products.
+Delete Part/Product: Permits the user to delete selected parts and products.
+Search Part/Product: Provides search functionality to find specific parts and products by ID or name.
+Exit Application: Allows the user to exit the application with a confirmation prompt.
+Project Structure
+
+The project follows the Model-View-Controller (MVC) design pattern:
+
+Model: Contains the data classes Part, Product, and Inventory.
+View: Consists of FXML files for the user interface layout.
+Controller: Contains Java classes that handle user interactions and business logic.
 Getting Started
 
 Prerequisites
-Java Development Kit (JDK) 8 or later
+Java Development Kit (JDK) 8 or higher
 JavaFX SDK
-Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans
+IDE (e.g., IntelliJ IDEA, Eclipse)
 Installation
-Clone the repository to your local machine:
+Clone the repository:
 bash
 Copy code
 git clone https://github.com/your-username/inventory-management-system.git
-Open the project in your preferred IDE.
-Add the JavaFX library to your project. Refer to your IDE's documentation for instructions.
+Open the project in your IDE:
+Import the project as a Maven project or configure the JavaFX libraries manually.
+Run the application:
+Navigate to the Main class and run it as a Java application.
 Usage
-
-Run the Main class to start the application.
-The main menu will display tables for parts and products.
-Use the buttons to add, modify, or delete parts and products.
-Use the search fields to find specific parts or products.
-Code Overview
-
-MainMenu.java
-This class serves as the controller for the main menu. It handles the user interactions and manages the data displayed in the tables.
-
-Methods
-
-onClickExit(ActionEvent actionEvent): Exits the application after user confirmation.
-onClickModifyPart(ActionEvent actionEvent): Loads the modify part controller.
-onClickAddPart(ActionEvent actionEvent): Loads the add part controller.
-onClickDeletePart(ActionEvent actionEvent): Deletes the selected part after user confirmation.
-onClickDeleteProduct(ActionEvent actionEvent): Deletes the selected product after user confirmation.
-onClickModifyProduct(ActionEvent actionEvent): Loads the modify product controller.
-onClickAddProduct(ActionEvent actionEvent): Loads the add product controller.
-initialize(URL url, ResourceBundle rb): Initializes the main menu controller and populates the part and product tables.
-initialize(): Sets up listeners for the search fields.
-OnActionSearchProductField(ActionEvent actionEvent): Handles the search for products.
-OnActionSearchPartsField(ActionEvent actionEvent): Handles the search for parts.
-searchPartTxtInput(String newText): Handles the input from the search part field.
-searchProductTxtInput(String newText): Handles the input from the search product field.
-showAlert(String title, String headerText): Displays an error alert.
-
+Launch the application:
+The main menu will be displayed, showing the parts and products tables.
+Add Part/Product:
+Click the "Add" button to open the add part/product form.
+Fill in the required fields and click "Save" to add the part/product to the inventory.
+Modify Part/Product:
+Select a part/product from the table.
+Click the "Modify" button to open the modify part/product form.
+Make the necessary changes and click "Save" to update the part/product.
+Delete Part/Product:
+Select a part/product from the table.
+Click the "Delete" button and confirm the deletion in the prompt.
+Search Part/Product:
+Enter the part/product name or ID in the search bar.
+The table will update to show the matching results.
+Exit Application:
+Click the "Exit" button.
+Confirm the exit in the prompt to close the application.
 
 
 
